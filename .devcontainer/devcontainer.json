@@ -23,12 +23,9 @@
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	"features": {
-		// "ghcr.io/devcontainers/features/github-cli": {},
-		// "ghcr.io/devcontainers/features/docker-in-docker:2": {},
-		// "ghcr.io/devcontainers-contrib/features/act:1": {},
+		"ghcr.io/devcontainers/features/docker-in-docker:2": {},
+		"ghcr.io/devcontainers-contrib/features/act:1": {},
         "ghcr.io/devcontainers-contrib/features/hadoop-sdkman:2": {}
-		// "ghcr.io/devcontainers/features/aws-cli:1": {},
-		// "ghcr.io/devcontainers/features/kubectl-helm-minikube:1": {},
 	},
 
 	"postCreateCommand": "pip3 install --upgrade pip && if [ -f requirements.txt ]; then pip install -r requirements.txt; fi",
